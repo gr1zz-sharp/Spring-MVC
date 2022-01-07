@@ -31,6 +31,7 @@ public class Player {
     }
 
 
+
     //
     //Accessors
     //
@@ -38,7 +39,6 @@ public class Player {
     public int getPlayerId() {
         return playerId;
     }
-
 
     public String getFirstName() {
         return firstName;

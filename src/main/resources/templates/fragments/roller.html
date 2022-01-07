@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <roller th:fragments="roller">
+        <td th:switch="${roller}">
+            <span th:case="'1'"><img th:src="@{/images/1.png}" width="150"/></span>
+            <span th:case="'2'"><img th:src="@{/images/2.png}" width="150"/></span>
+            <span th:case="'3'"><img th:src="@{/images/3.png}" width="150"/></span>
+            <span th:case="'4'"><img th:src="@{/images/4.png}" width="150"/></span>
+            <span th:case="'5'"><img th:src="@{/images/5.png}" width="150"/></span>
+            <span th:case="'6'"><img th:src="@{/images/6.png}" width="150"/></span>
+            <span th:case="'7'"><img th:src="@{/images/7.png}" width="150"/></span>
+            <span th:case="'8'"><img th:src="@{/images/8.png}" width="150"/></span>
+            <span th:case="'9'"><img th:src="@{/images/9.png}" width="150"/></span>
+            <span th:case="'10'"><img th:src="@{/images/10.png}" width="150"/></span>
+            <span th:case="'11'"><img th:src="@{/images/11.png}" width="150"/></span>
+            <span th:case="'12'"><img th:src="@{/images/12.png}" width="150"/></span>
+            <span th:case="'13'"><img th:src="@{/images/13.png}" width="150"/></span>
+            <span th:case="'14'"><img th:src="@{/images/14.png}" width="150"/></span>
+            <span th:case="'15'"><img th:src="@{/images/15.png}" width="150"/></span>
+            <span th:case="'16'"><img th:src="@{/images/16.png}" width="150"/></span>
+            <span th:case="'17'"><img th:src="@{/images/17.png}" width="150"/></span>
+            <span th:case="'18'"><img th:src="@{/images/18.png}" width="150"/></span>
+            <span th:case="'19'"><img th:src="@{/images/19.png}" width="150"/></span>
+            <span th:case="'20'"><img th:src="@{/images/20.png}" width="150"/></span>
+        </td>
+    </roller>
+
+</body>
+</html>

@@ -7,6 +7,40 @@
     <link rel="stylesheet" th:href="@{main.css}" />
 </head>
 <body>
+<div th:replace="~{fragments/navigation :: navigation}"></div>
+
+<main role="main" class="flex-shrink-0">
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <div align="left">
+                <h1>Create New Character</h1>
+                <form action="#" th:action="@{/characterSheet}" method="post" th:object="${characterSheet}">
+                    <div class="mb-3">
+                        <label for="Player" class="form-label">Player Name</label>
+                        <input type="text" class="form-control" id="player" th:field="*{player}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Character Name</label>
+                        <input type="text" class="form-control" id="name" th:field="*{name}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="CharacterClass" class="form-label">Character Class</label>
+                        <input type="text" class="form-control" id="characterClass" th:field="*{characterClass}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Age" class="form-label">Character Age</label>
+                        <input type="text" class="form-control" id="age" th:field="*{age}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Race" class="form-label">Character Race</label>
+                        <input type="text" class="form-control" id="race" th:field="*{race}">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Character</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
 
 </body>
 </html>

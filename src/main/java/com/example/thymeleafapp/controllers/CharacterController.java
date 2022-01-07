@@ -24,9 +24,10 @@ public class CharacterController {
     }
 
     @PostMapping("/characterSheet")
-    public String characterCreated(@ModelAttribute("character_creation")CharacterSheet characterSheet){
+    public String characterCreated(@ModelAttribute("character_creation")CharacterSheet characterSheet, Model model){
         System.out.println(characterSheet.getName());
         characterService.addCharacter(characterSheet);
+        model.addAttribute("newCharacterName", characterSheet.getName());
         return "character_created";
     }
 }
